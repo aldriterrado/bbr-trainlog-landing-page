@@ -12,7 +12,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} BBR TrainLog. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            Developed Aldri Terrado
+            Developed by Aldri Terrado
           </p>
         </div>
       </div>
