@@ -39,7 +39,7 @@ export const FeaturesSection = () => {
               icon: <CheckSquare className="h-6 w-6 text-white" />,
               title: 'Qualification Matrix',
               description:
-                'Visualize training requirements and completion status across teams with customizable qualification matrices.',
+                'Stay Audit-Ready with Clear Training Visibility',
               color: 'from-green-600 to-teal-600',
               textColor: 'text-green-700',
             },
