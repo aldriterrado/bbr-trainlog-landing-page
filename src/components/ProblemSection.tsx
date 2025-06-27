@@ -60,7 +60,14 @@ const problemCards = [
       'Save countless hours with automated workflows and instant access to training information.',
   },
 ]
-const ProblemCard = ({ icon, title, description, delay }) => {
+
+interface ProblemCardProps {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+    delay: number;
+}
+const ProblemCard = ({ icon, title, description, delay }: ProblemCardProps) => {
   return (
     <div
       className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 transform transition duration-300 hover:-translate-y-2 hover:shadow-xl relative overflow-hidden group"

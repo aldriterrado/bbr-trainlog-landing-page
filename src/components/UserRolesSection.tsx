@@ -1,19 +1,14 @@
 import React from 'react'
 import {
-  Users,
-  GraduationCap,
-  Shield,
   FileText,
   UserPlus,
   ClipboardCheck,
-  Settings,
   BarChart,
   Upload,
   UserCog,
   BookOpen,
   CalendarCheck,
   CheckCircle,
-  Key,
   Sliders,
 } from 'lucide-react'
 export const UserRolesSection = () => {
@@ -168,7 +163,13 @@ export const UserRolesSection = () => {
     </section>
   )
 }
-const RolePermission = ({ icon, title, color }) => {
+
+interface RolePermissionProps {
+    icon: React.ReactNode;
+    title: string;
+    color: string;
+}
+const RolePermission = ({ icon, title, color }: RolePermissionProps) => {
   return (
     <div className="flex items-center group">
       <div

@@ -1,8 +1,6 @@
 import {
-  CalendarIcon,
   UsersIcon,
   CheckCircleIcon,
-  ArrowRightIcon,
   ClockIcon,
   PaletteIcon,
   RocketIcon,

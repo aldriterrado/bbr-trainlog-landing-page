@@ -3,13 +3,15 @@ import { Menu, X } from 'lucide-react'
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   // Handle smooth scrolling when clicking navigation links
-  const handleNavLinkClick = (e) => {
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const targetId = e.currentTarget.getAttribute('href')
     const targetElement =
       targetId === '#'
-        ? document.documentElement // For the logo, scroll to the very top
-        : document.querySelector(targetId)
+        ? document.documentElement
+        : targetId
+          ? document.querySelector(targetId)
+          : null
     if (targetElement) {
       // Close mobile menu if open
       if (isMenuOpen) {
@@ -36,7 +38,7 @@ export const Navbar = () => {
                   onClick={handleNavLinkClick}
                   className="cursor-pointer"
                 >
-                  <span className="text-blue-600 font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                  <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                     BBR TrainLog
                   </span>
                 </a>
